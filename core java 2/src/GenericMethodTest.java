@@ -1,0 +1,33 @@
+
+public class GenericMethodTest {
+	//generic method pritnArraypublic 
+	public static <E> void printArray(E[]inputArray)
+	{
+		//Display array elements
+		for (E element : inputArray)
+		{
+			System.out.printf("%s", element);
+		}
+		System.out.println();
+	}
+
+	public static void main(String[] args)
+	{
+		//create arrays of Integer,Double and Character
+		Integer[] intArray = {1,2,3,4,5};
+		Double[] doubleArray = {1.1,2.2,3.3,4.4};
+		Character[] charArray = {'H','E','L','L','O'};
+		
+		System.out.println("Array integerArray cotains : ");
+		printArray(intArray); //pass an integer array
+		
+		System.out.println("Array doubleArray cotains : ");
+		printArray(doubleArray); //pass a double array
+		
+		System.out.prin  tln("Array characterArray cotains : ");
+		printArray(charArray); //pass a character array
+		
+		
+	}
+
+}

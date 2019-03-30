@@ -1,0 +1,14 @@
+import java.util.ArrayList;
+public class MyBasicArrayList {
+
+	public static void main(String[] args) {
+		ArrayList<String> A1 = new ArrayList<String>;
+		
+		A1.add("JAVA");
+		A1.add("C++");
+		A1.add("C");
+		A1.add("PYTHON");
+		A1.add(".NET");
+	}
+
+}

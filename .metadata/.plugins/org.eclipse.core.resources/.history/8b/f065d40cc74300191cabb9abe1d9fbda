@@ -1,0 +1,13 @@
+import java.util.function.Predicate;
+
+public class PredicateDemo1 {
+
+	public static void main(String[] args) {
+		//creating predicate
+		Predicate<Integer> lesserthan = i -> (i < 18);
+		
+		//calling Prediacte method
+		System.out.println(lesserthan.test(10));
+	}
+
+}

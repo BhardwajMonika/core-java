@@ -1,0 +1,9 @@
+
+Mar 07, 2019 20:57:51.80 NEW SESSION
+Mar 07, 2019 20:57:51.80 [7460:2088:0307/205751.790:ERROR:browser_process_sub_thread.cc(209)] Waited 136 ms for network service
+Mar 07, 2019 20:59:12.81 [7980:9588:0307/205912.813:ERROR:browser_process_sub_thread.cc(209)] Waited 28 ms for network service
+Mar 07, 2019 21:03:55.71 [8308:6704:0307/210355.715:ERROR:browser_process_sub_thread.cc(209)] Waited 19 ms for network service
+Mar 07, 2019 23:23:38.75 [6524:3008:0307/232338.759:ERROR:browser_process_sub_thread.cc(209)] Waited 9 ms for network service
+Mar 08, 2019 22:20:56.31 [10668:1184:0308/222056.310:ERROR:audio_manager_base.cc(363)] Invalid audio output parameters received; using fake audio path: format: 0 channel_layout: 0 channels: 0 sample_rate: 0 frames_per_buffer: 0 effects: 0 mic_positions: 
+Mar 08, 2019 22:23:27.96 [10668:1184:0308/222327.966:ERROR:audio_manager_base.cc(363)] Invalid audio output parameters received; using fake audio path: format: 0 channel_layout: 0 channels: 0 sample_rate: 0 frames_per_buffer: 0 effects: 0 mic_positions: 
+Mar 08, 2019 22:26:04.39 [10668:1184:0308/222604.391:ERROR:audio_manager_base.cc(363)] Invalid audio output parameters received; using fake audio path: format: 0 channel_layout: 0 channels: 0 sample_rate: 0 frames_per_buffer: 0 effects: 0 mic_positions: 

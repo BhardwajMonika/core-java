@@ -1,0 +1,42 @@
+import java.sql.*;
+import java.util.*;
+public class UpdateTest {
+	
+	//creating main method
+	public static void main(String []args)
+	{
+		Connection con;
+		PreparedStatement pstmt;
+		ResultSet rs;
+		try {
+			
+			//loading drivers
+			Class.forName("com.mysql.jdbc.Driver");   
+			//creating connection
+	        con= DriverManager.getConnection("jdbc:MySql://localhost:3307/classicmodels",
+					"root","root");
+	        
+	        //data to be updated
+	        String strUpdate = "UPDATE candidates "+"SET first_name= ? "+"WHERE id =?";
+	        pstmt=con.prepareStatement(strUpdate);
+		
+	        Scanner sc = new Scanner(System.in);
+			System.out.println("Enter Id:");
+			int id=sc.nextInt();
+			sc.nextLine();
+			System.out.println("Enter Name :");
+			String strm=sc.nextLine();
+			
+			pstmt.setString(1, strm);
+			pstmt.setInt(2, id);
+			
+			int success = pstmt.executeUpdate();
+			System.out.println("Row affected"+success);
+			
+		}catch(Exception e)
+		{
+			System.out.println(e);
+		}
+	}
+
+}

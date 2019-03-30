@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+.sqaure{
+width:100px;
+height:100px;
+background-color:green;
+border:5px, solid yellow;
+margin:100px;
+transition:transform 1s;
+}
+
+.square:hover{transform:scale(2);}
+
+.droplet{
+height:100px;
+background-color:mediumaquamarine;
+border-radius:2% 50%;
+margin:100px;
+transition:all 3s;
+transition-timing:ease-in-out;
+}
+
+.droplet:hover{transform:rotateX(180deg);}
+</style>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+</body>
+</html>

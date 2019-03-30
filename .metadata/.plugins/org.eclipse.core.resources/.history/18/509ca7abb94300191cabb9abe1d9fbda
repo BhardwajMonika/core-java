@@ -1,0 +1,8 @@
+
+public class LambdaDemo1 {
+
+	public static void main(String[] args)
+	{
+		NumericTest isEven =(n) -> (n%2)==0;
+	}
+}

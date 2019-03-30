@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<LINK REL=stylesheet HREF="StyleSheet1.css" TYPE="text/css">
+<title>Changing the Rules</title>
+</head>
+<body>
+<H2>CHANGING THE RULES IS FUN</H2>
+<br>
+<P class="warning"> Changing the rules may not be such fun
+<H2>The H2 element again</H2>
+<p>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Ajax Database Demo</title>
+<script>
+var request;
+function sendInfo()
+{
+	var v=document.vinform.t1.value;
+	var url="index.jsp?val="+v;
+	
+	if(window.XMLHttpRequest){
+		request=new XMLHttpRequest();
+	}
+	else if(window.ActiveXObject){
+		request=new ActiveXObject("Microsoft.XMLHTTP");
+	}
+	
+try{
+	request.onreadystatechange=getInfo;
+	request.open("GET",url,true);
+	request.send();
+}	
+	}
+</script>
+</head>
+<body>
+
+</body>
+</html>

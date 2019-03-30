@@ -1,0 +1,6 @@
+
+public class PlayerLIst {
+	ArrayList playerArray;
+	List subListObj;
+	
+}

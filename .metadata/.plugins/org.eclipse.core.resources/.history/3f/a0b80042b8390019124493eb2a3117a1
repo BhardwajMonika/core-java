@@ -1,0 +1,28 @@
+import java.util.*;
+public class InsertBooks {
+
+	public static void main(String [] args)
+	{
+		//create an arrayList
+		ArrayList<String> a1 = new ArrayList<String>;
+		
+		//adding books name
+		a1.add("Book1");
+		a1.add("Book2");
+		a1.add("Book3");
+		a1.add("Book4");
+		a1.add("Book5");
+		a1.add("Book6");
+		a1.add("Book7");
+		a1.add("Book8");
+		a1.add("Book9");
+		a1.add("Book10");
+		
+		//displaying the entries
+		for(String s : a1)
+		{
+			System.out.println("Book = " + s);
+		}
+		
+	}
+}

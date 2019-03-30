@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Events Demo</title>
+        <script>
+        function myFunction(){
+            alert("You pressed a key inside the input field");
+        }
+        </script>
+    </head>
+    <body bgcolor="lightgreen">
+        <button onclick="getElementById('demo').innerHTML=Date()">The time is?</button>
+        <p id="demo"></p>
+        <h1 onmouseover="style.color='red'" onmouseout="style.color='black'">Mouse over this text</h1>
+        <p>A function is triggered when the user is pressing a key in the input field.</p>
+        <input type="text" onkeypress="myFunction()">
+    </body>
+</html>

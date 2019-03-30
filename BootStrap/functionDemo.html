@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Function Demo</title>
+        <SCRIPT LANGUAGE ="JavaScript">
+        function Sum(num1,num2)
+        {
+            var ans=num1+num2
+            document.write("The sum is :"+ans)
+        }
+        function test(s)
+        {
+            alert("Function Invoked");
+            document.write(s);
+        }
+        function Add()
+        {
+            var ans = 0
+            var len = Add.arguments.length
+            for(i=0;i<len;i++)
+            {
+                ans +=Add.arguments[i]
+            }
+            document.write("The sum is :"+ans)
+        }
+        </SCRIPT>
+    </head>
+    <body>
+        <h1 align="center">Function TO add Two numbers</h1>
+    <SCRIPT LANGUAGE ="JavaScript">
+    Sum(10,20)
+    Add(20,30)
+    Add(20,30,40,50)
+    </SCRIPT>
+<form>
+    <input type="button" value="Press" onClick="test('HELLO')">
+    <br>
+    <a href="myfile.html" onMouseOver="window.alert('Hello');">My Page</a>
+</form>    
+</body>
+</html>

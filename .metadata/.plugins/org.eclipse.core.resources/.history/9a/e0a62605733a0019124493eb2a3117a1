@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<meta charset="ISO-8859-1">
+<title>canvas</title>
+</head>
+<body>
+
+	<canvas id="myCanvas" width="300" height="200" 
+		style="border: 1px solid #000000;">
+</canvas>
+<script>
+	var c = document.getElementById("myCanvas");
+	var ctx = c.getContext("2d");
+	
+	
+	ctx.drawStyle = "#FF0000";
+	ctx.strokeStyle="#00FF00";
+	ctx.strokeRect(0, 0, 200, 100);
+	
+	ctx.beginPath();
+	ctx.strokeStyle="#FF0000"
+	ctx.arc(95,50,40,0,2*Math.PI);
+	ctx.stroke();
+	
+	ctx.moveTo(0,0);
+	ctx.lineTo(200,100);
+	ctx.lineWidth=10;
+	
+	ctx.strokeStyle='#0000ff';
+	ctx.stroke();
+	
+	ctx.font="30px Arial";
+	ctx.fillStyle='cyan';
+	ctx.fillText("Monika",10,50);
+</script>
+
+</body>
+</html>

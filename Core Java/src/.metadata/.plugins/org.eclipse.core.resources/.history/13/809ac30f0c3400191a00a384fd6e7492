@@ -1,0 +1,23 @@
+import java.util.ArrayList;
+public class PlayerList {
+	ArrayList playerArray;
+	List subListObj;
+	
+	PlayerList()
+	{
+		playerArray = new ArrayList();
+		subListObj = new ArrayList();
+	}
+	
+	void add()
+	{
+		for(int ctr = 0; ctr < 5; ctr++)
+		{
+			playerArray.add("MArtina");
+			playerArray.add("Serena");
+			playerArray.add("Venus");
+			playerArray.add("Serena");
+			System.out.println();
+		}
+	}
+}

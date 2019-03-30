@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<meta charset="ISO-8859-1">
+<title>canvas</title>
+</head>
+<body>
+
+	<canvas id="myCanvas" width="300" height="200"
+		style="border: 1px solid #000000;">
+</canvas>
+<script>
+	var c = document.getElementById("myCanvas");
+	var ctx = c.getContext("2d");
+	ctx.arc(x,y,r,start,stop);
+	//ctx.drawStyle = "#FF0000";
+	//ctx.strokeRect(0, 0, 150, 75);
+	
+</script>
+
+</body>
+</html>

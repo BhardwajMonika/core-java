@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx= c.getContext("2d");
+ctx.fillStyle="#RR0000";
+ctx.fillRect(0,0,150,75);
+</script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<canvas id="myCanvas"
+width="200" height="100"
+style="border:1px solid #0000;">
+</canvas>
+</body>
+</html>

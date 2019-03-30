@@ -1,0 +1,59 @@
+
+public class Book
+{
+	String name;
+	Double price;
+	public Book(String name, Double price) 
+	{
+		this.name = name;
+		this.price= price;
+	}
+}
+
+class SortbyPrice implements Comparator<Book>
+{
+
+	public int compare(Book a, Book b) {
+		// TODO Auto-generated method stub
+		return a.price .compareTo(b.price);
+	}
+	
+}
+
+public class InsertBooks
+{	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Creating list of books
+		
+		ArrayList<Book> list = new ArrayList<Book>();
+		//creating books
+		Book b1 = new Book("BOOK1",,800.0);
+		Book b2 = new Book("BOOK2",400.0);
+		Book b3 = new Book("BOOK3",300.0);
+		Book b4 = new Book("BOOK4",400.0);
+		Book b5 = new Book("BOOK5",200.0);
+		Book b6 = new Book("BOOK6",700.0);
+		Book b7 = new Book("BOOK7",600.0);
+		Book b8 = new Book("BOOK8",800.0);
+		Book b9 = new Book("BOOK9",900.0);
+		Book b10 = new Book("BOOK10",200.0);
+		//Adding books to list
+		list.add(b1);
+		list.add(b2);
+		list.add(b3);
+		list.add(b4);
+		list.add(b5);
+		list.add(b6);
+		list.add(b7);
+		list.add(b8);
+		list.add(b9);
+		list.add(b10);
+		Collections.sort(list,new SortbyPrice());
+		//traversing list
+		for(MyBook b:list) 
+		{
+			System.out.println(b.name+" "+b.price);
+		}
+	}
+}

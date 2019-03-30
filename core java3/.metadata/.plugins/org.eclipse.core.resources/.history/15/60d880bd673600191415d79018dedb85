@@ -1,0 +1,56 @@
+import java.sql.*;
+
+public class BatchDemo {
+	Connection con;
+	Statement stmt;
+	ResultSet rs;
+	BatchDemo()
+	{
+		
+	}
+	
+	void createConnection() {
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3307/mysqljdbc","root","root");
+		}catch(Exception e) {
+			System.out.println(e);
+		}
+		
+}
+	
+	void createBatch()
+	{
+		//create batch
+		try {
+			stmt.addBatch("insert into skills(name) values('Spring')");
+	
+		stmt.addBatch("update skills set name = 'Web App' where id =4");
+		
+		//stmt.addBatch("delete skills where id = 6");
+		
+		//disable auto-commit mode
+		con.setAutoCommit(false);
+		try {
+			int i[]=stmt.executeBatch();
+			con.commit();
+			System.out.println("batch is successfully executed");
+		}
+		catch (Exception e)
+		{
+			System.out.println("batch is failed");
+		}
+		
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public static void main(String[] args)
+	{
+		BatchDemo objBatch = new BatchDemo();
+		objBatch.createConnection();
+		objBatch.createBatch();
+ 
+}
+}

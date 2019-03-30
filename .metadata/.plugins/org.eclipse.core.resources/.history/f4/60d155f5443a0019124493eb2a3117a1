@@ -1,0 +1,63 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.*;
+
+public class Book1
+{
+	String name;
+	Double price;
+	public Book1(String name, Double price) 
+	{
+		this.name = name;
+		this.price= price;
+	}
+}
+
+class SortbyPrice implements Comparator<Book1>
+{
+
+	public int compare(Book1 a, Book1 b) {
+		// TODO Auto-generated method stub
+		return a.price .compareTo(b.price);
+	}
+	
+}
+
+public class InsertBooks
+{	
+	public static void main(String[] args) {
+		
+		
+		ArrayList<Book1> list = new ArrayList<Book1>();
+		
+		Book1 b1 = new Book1("BOOK1",800.0);
+		Book1 b2 = new Book1("BOOK2",400.0);
+		Book1 b3 = new Book1("BOOK3",300.0);
+		Book1 b4 = new Book1("BOOK4",400.0);
+		Book1 b5 = new Book1("BOOK5",200.0);
+		Book1 b6 = new Book1("BOOK6",700.0);
+		Book1 b7 = new Book1("BOOK7",600.0);
+		Book1 b8 = new Book1("BOOK8",800.0);
+		Book1 b9 = new Book1("BOOK9",900.0);
+		Book1 b10 = new Book1("BOOK10",200.0);
+		
+		//Adding books to arraylist
+		list.add(b1);
+		list.add(b2);
+		list.add(b3);
+		list.add(b4);
+		list.add(b5);
+		list.add(b6);
+		list.add(b7);
+		list.add(b8);
+		list.add(b9);
+		list.add(b10);
+		Collections.sort(list,new SortbyPrice());
+		
+		for(Book1 b:list) 
+		{
+			System.out.println(b.name+" "+b.price);
+		}
+	}
+}

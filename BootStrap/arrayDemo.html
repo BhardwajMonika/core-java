@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <title>Arrays Demo</title>
+</head>
+
+<body>
+    <script language="javascript">
+        var fruits = ['appple', 'orange', 'kiwi'];
+        alert(fruits[1]);
+
+        //add elements to end of array
+        fruits[3] = ' banana ';
+        fruits[fruits.length] = 'cherry';
+        fruits.push('grape');
+ 
+        //add elements to the begining of array
+        fruits.unshift('blackberry');
+
+        //iteration through array in JS
+        document.write("The array contents are:");
+
+        for (i = 0; i < fruits; i++) {
+            document.write(fruits[i]);
+            
+           // document.write("<br>");
+        }
+        fruits.sort();
+
+        //for each
+        var text = '';
+        for (var i in fruits) {
+            text += fruits[i];
+            text += '\n';
+        }
+        document.write(text);
+
+        //removing elements
+        fruits.pop();//remove elemnets from end of array
+        fruits.shift(); //remove elements from begining of array
+
+        for (i = 0; i < fruits; i++) {
+            document.write(fruits[i]);
+            document.write("<br>");
+        }
+        document.write("**********************************************************"+ "<br>");
+        MyStack =[[1234 ," Book ",123.45],[1,2,3]];
+
+        for(j=0;j<MyStack.length;j++)
+        {
+            document.write(MyStack[j]);
+            document.write("<br>");
+        }
+    </script>
+</body>
+
+</html>
